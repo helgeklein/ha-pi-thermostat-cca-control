@@ -5,7 +5,7 @@
 # pytest, pytest-asyncio, and pytest-cov are resolved via
 # pytest-homeassistant-custom-component.
 -r requirements-ha.txt
-pytest-homeassistant-custom-component==0.13.271
+pytest-homeassistant-custom-component==0.13.322
 
 # Static type checking
 mypy>=2.3.0

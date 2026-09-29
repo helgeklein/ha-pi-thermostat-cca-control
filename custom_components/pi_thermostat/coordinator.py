@@ -238,7 +238,7 @@ class DataUpdateCoordinator(BaseCoordinator[CoordinatorData]):
                 last_step_timestamp_iso=payload.get("last_step_timestamp_iso") or payload.get("last_update_iso"),
                 status=str(payload.get("status", "idle")),
             )
-        except (TypeError, ValueError):
+        except TypeError, ValueError:
             self._logger.warning("Invalid persisted CCA state ignored")
             return
 

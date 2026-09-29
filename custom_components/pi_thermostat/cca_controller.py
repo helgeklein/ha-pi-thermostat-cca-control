@@ -88,7 +88,7 @@ class CCAControllerStrategy:
         value = forecast.get("temperature")
         try:
             return float(value) if value is not None else None
-        except (TypeError, ValueError):
+        except TypeError, ValueError:
             return None
 
     @staticmethod
@@ -98,7 +98,7 @@ class CCAControllerStrategy:
         value = forecast.get("templow")
         try:
             return float(value) if value is not None else None
-        except (TypeError, ValueError):
+        except TypeError, ValueError:
             return None
 
     def restore_state(self, state: CCAState) -> None:
