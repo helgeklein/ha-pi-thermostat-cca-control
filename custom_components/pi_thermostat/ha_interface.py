@@ -161,7 +161,7 @@ class HomeAssistantInterface:
             return None
         try:
             return float(state_obj.state)
-        except (ValueError, TypeError):
+        except ValueError, TypeError:
             self._logger.warning(
                 "Cannot convert state of %s to float: %s",
                 entity_id,
@@ -188,7 +188,7 @@ class HomeAssistantInterface:
             return None
         try:
             return float(value)
-        except (ValueError, TypeError):
+        except ValueError, TypeError:
             self._logger.warning(
                 "Cannot convert attribute %s of %s to float: %s",
                 attribute,

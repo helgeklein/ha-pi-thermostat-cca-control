@@ -1,9 +1,9 @@
 {
     "name": "pi_thermostat",
-    "image": "mcr.microsoft.com/devcontainers/python:3.13",
-    // Install Ruby for Jekyll documentation
-    "onCreateCommand": "sudo apt-get update && sudo apt-get install -y ruby-full bundler build-essential zlib1g-dev ripgrep",
-    "postCreateCommand": "scripts/setup",
+    "build": {
+        "dockerfile": ".devcontainer/Dockerfile",
+        "context": "."
+    },
     "forwardPorts": [
         8123,
         4000
@@ -55,7 +55,7 @@
                 "python.analysis.inlayHints.functionReturnTypes": false,
                 "python.analysis.inlayHints.variableTypes": false,
                 "python.analysis.completeFunctionParens": false,
-                "python.defaultInterpreterPath": "/usr/local/bin/python",
+                "python.defaultInterpreterPath": "/usr/local/bin/python3",
                 // VS Code file watching optimizations
                 "files.watcherExclude": {
                     "**/__pycache__/**": true,

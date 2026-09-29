@@ -350,7 +350,7 @@ class ITermSensor(IntegrationEntity, RestoreEntity, SensorEntity):  # pyright: i
                 restored_value = float(last_state.state)
                 self.coordinator.restore_integral_term(restored_value)
                 return
-            except (ValueError, TypeError):
+            except ValueError, TypeError:
                 pass
 
         # No valid persisted state — fall back to startup value

@@ -132,7 +132,7 @@ async def async_setup_entry(
         # Register the update listener
         entry.async_on_unload(entry.add_update_listener(async_reload_entry))
 
-    except (ConfigEntryNotReady, ConfigEntryAuthFailed):
+    except ConfigEntryNotReady, ConfigEntryAuthFailed:
         raise
     except (OSError, ValueError, TypeError) as err:
         # "Expected" errors: only log an error message
