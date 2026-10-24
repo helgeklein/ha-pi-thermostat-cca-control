@@ -8,4 +8,4 @@
 pytest-homeassistant-custom-component==0.13.322
 
 # Static type checking
-mypy>=2.3.0
+mypy>=2.4.0
