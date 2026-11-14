@@ -2,46 +2,34 @@
 layout: default
 title: "Installation: Download"
 nav_order: 2
-description: "Installation guide part 1 for PI Thermostat & CCA Control for Home Assistant, via HACS or manually."
+description: "Installation guide part 1 for PI Thermostat & CCA Control for Home Assistant, via Marketplace or manually."
 permalink: /installation-download/
 ---
 
-# Installation Guide 1: Download Integration
+# Installation: Download Integration
 
-## Method 1: Via HACS (Recommended)
+## Method 1: Via Marketplace (Recommended)
+
+Home Assistant Marketplace (formerly HACS) is the easiest way to download the latest stable release of the integration and keep it up to date in Home Assistant.
 
 ### Prerequisites
 
-- [HACS](https://hacs.xyz/) must be installed and configured in your Home Assistant instance.
+- HA versions 2026.11 or later: Marketplace ships as part of Home Assistant.
+- HA versions prior to 2026.11: [HACS](https://hacs.xyz/) must be installed and configured in your Home Assistant instance.
 
-### Steps
+### Download the Integration
 
-1. **Add the Integration's Repository**
-
-   Click the button below to add this integration's repository to HACS:
-
-   [![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=helgeklein&repository=ha-pi-thermostat-cca-control&category=Integration)
-
-   Alternatively, if the button above doesn't work for you, add the integration's repository manually to HACS:
-
-   - Open HACS in your Home Assistant instance.
-   - Click the three dots (⋮) in the top right corner.
-   - Select **Custom repositories**.
-   - Add the repository URL for this integration: `https://github.com/helgeklein/ha-pi-thermostat-cca-control`.
-   - Select **Integration** as the category.
-   - Click **Add**.
-
-2. **Download the Integration**
-
-   - Search for **PI Thermostat & CCA Control** in HACS.
-   - Click **Download** in the bottom right corner.
-   - Restart Home Assistant when prompted.
+- Search for **PI Thermostat & CCA Control** in Marketplace.
+- Click **Download** in the bottom right corner.
+- Restart Home Assistant when prompted.
 
 ## Method 2: Manual Installation
 
+Use the manual installation method if you want to test pre-release versions of the integration that have not yet been published as GitHub releases.
+
 ### Download and Extract
 
-1. Download the latest release from [GitHub Releases](https://github.com/helgeklein/ha-pi-thermostat-cca-control/releases).
+1. Download the latest code from the `main` branch of the GitHub repository as a [ZIP file](https://github.com/helgeklein/ha-pi-thermostat-cca-control/archive/refs/heads/main.zip).
 2. Extract the archive.
 3. Copy the `pi_thermostat` folder to your Home Assistant `custom_components` directory.
 

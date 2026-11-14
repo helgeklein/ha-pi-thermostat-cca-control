@@ -2,7 +2,7 @@
 layout: default
 title: "Installation: Add to HA"
 nav_order: 3
-description: "Installation guide part 2 for PI Thermostat & CCA Control for Home Assistant, via HACS or manually."
+description: "Installation guide part 2 for PI Thermostat & CCA Control for Home Assistant, via Marketplace or manually."
 permalink: /installation-add/
 ---
 
